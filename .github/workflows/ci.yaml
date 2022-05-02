@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  install:
+    name: Install dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        id: cache
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - uses: actions/setup-node@v2
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install
+        if: steps.cache.outputs.cache-hit != 'true'
+
