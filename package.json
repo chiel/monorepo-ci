@@ -1,5 +1,11 @@
 {
   "private": true,
   "name": "monorepo-ci",
-  "repository": "github:chiel/monorepo-ci"
+  "repository": "github:chiel/monorepo-ci",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
