@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "yargs": "^17.4.1"
   }
 }
