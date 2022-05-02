@@ -3,7 +3,9 @@
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
-const validJobs = {};
+const validJobs = {
+	'docker-build': true,
+};
 
 const argv = yargs(hideBin(process.argv))
 	.command('$0 [packages]', 'Generate matrices per job for given packages.', yargs => {
