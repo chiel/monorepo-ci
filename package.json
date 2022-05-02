@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "monorepo-ci",
+  "repository": "github:chiel/monorepo-ci"
+}
