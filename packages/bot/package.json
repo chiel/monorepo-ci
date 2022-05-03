@@ -1,0 +1,14 @@
+{
+	"name": "@chiel/monorepo-ci-bot",
+	"version": "0.0.0",
+	"repository": {
+		"url": "github:chiel/monorepo-ci",
+		"directory": "packages/bot"
+	},
+	"scripts": {
+		"build": "mkdir dist && touch dist/boop"
+	},
+	"jobs": [
+		"docker-build"
+	]
+}

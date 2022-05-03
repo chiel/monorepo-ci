@@ -1,0 +1,11 @@
+{
+	"name": "@chiel/monorepo-ci-utils",
+	"version": "0.0.0",
+	"repository": {
+		"url": "github:chiel/monorepo-ci",
+		"directory": "packages/utils"
+	},
+	"scripts": {
+		"build": "mkdir dist && touch dist/boop"
+	}
+}
